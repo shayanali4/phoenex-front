@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import ChartHeader from "./chartHeader";
 import Image from "next/legacy/image";
@@ -73,7 +75,9 @@ function SchoolWork() {
               />
             </div>
             <div className="bg-[#F4F8FC] rounded-lg p-2 relative w-full">
-              <p className="text-[11px] text-[#9E9E9E] ">{item.message}</p>
+              {/* <div> */}
+                <span className="text-[11px] text-[#9E9E9E] ">{item.message}</span>
+              {/* </div> */}
               <div
                 className={`absolute bottom-[-25px] ${
                   item.user === "user" ? "left-2" : "right-2"
